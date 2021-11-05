@@ -1,0 +1,86 @@
+.logo {
+  max-width: 1000px;
+  
+  margin: 0 auto;
+}
+
+.logo path,
+.logo line {
+  fill: none;
+  stroke: #000000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 11;
+}
+
+.logo .logo-green-line {
+  stroke: #00FF22;
+  stroke-width: 20;
+}
+
+.logo .logo-dot {
+  fill: aliceblue;
+  animation: logo-dot 2s ease-in-out infinite;
+}
+
+@keyframes logo-dot {
+  0% {
+    opacity: 0;
+    transform: translate(0, -17px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(0, -17px);
+  }
+  90% {
+    transform: translate(0, 155.9px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 155.9px);
+    opacity: 0;
+  }
+}
+
+.logo .logo-whisker {
+  stroke-width: 6;
+}
+
+.logo .logo-ncoder,
+.logo .logo-top-rat,
+.logo .logo-ecoder,
+.logo .logo-bottom-rat {
+  opacity: 0;
+  transition: .2s;
+  transition-delay: .3s;
+}
+
+.logo .logo-e-r,
+.logo .logo-d-r {
+  transition: .3s;
+  transition-delay: .3s;
+}
+
+.logo .logo-e-r {
+  transform: translate(-42%, 0);
+}
+
+.logo .logo-d-r {
+  transform: translate(-41.3%, 0);
+}
+
+.logo:hover .logo-e-r,
+.logo:hover .logo-d-r {
+  transform: translate(0%, 0);
+  transition-delay: 0s;
+}
+
+.logo:hover .logo-ncoder,
+.logo:hover .logo-top-rat,
+.logo:hover .logo-ecoder,
+.logo:hover .logo-bottom-rat {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: 0;
+}

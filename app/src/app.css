@@ -1,0 +1,49 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.3;
+  background-color: aliceblue;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+#footer {
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#header{
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-style: bold;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-style: italic;
+}
