@@ -1,5 +1,5 @@
 body {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   line-height: 1.3;
   background-color: aliceblue;
 }
@@ -10,13 +10,18 @@ main {
   margin: 20px auto;
 }
 
-#footer {
+#footer,
+#highlighted-footer {
   padding: 20px;
   text-align: center;
   margin: 20px auto;
 }
 
-#header{
+#highlighted-footer {
+  background-color: aliceblue;
+}
+
+#header {
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
@@ -46,4 +51,16 @@ h5 {
 h5 {
   font-size: 1.1em;
   font-style: italic;
+}
+
+#orfelia-page {
+  background-color: black;
+  color: rgba(100, 200, 100);
+}
+
+#orfelia-page .container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
