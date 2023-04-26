@@ -53,6 +53,11 @@ h5 {
   font-style: italic;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #orfelia-page {
   background-color: black;
   color: rgba(100, 200, 100);
