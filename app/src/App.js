@@ -10,7 +10,9 @@ import MainLayout from "./MainLayout.js";
 import HighlightLayout from "./HighlightLayout.js";
 import Home from "./pages/Home.mdx";
 import GenderGenerator from "./pages/GenderGenerator.mdx";
-import Orfelia from "./pages/Orfelia/OrfeliaPage.js";
+import OrfeliaLayout from "./pages/Orfelia/OrfeliaPage.js";
+import Messsy from "./pages/Orfelia/Messsy.mdx";
+import OrfeliaContent from "./pages/Orfelia/OrfeliaContent.mdx";
 
 export default function App() {
   return (
@@ -23,7 +25,10 @@ export default function App() {
           </Route>
         </Route>
         <Route path="/" element={<HighlightLayout />}>
-          <Route path="orfelia" element={<Orfelia />} />
+          <Route path="/orfelia" element={<OrfeliaLayout />}>
+            <Route path="" element={<OrfeliaContent />} />
+            <Route path="messsy" element={<Messsy />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

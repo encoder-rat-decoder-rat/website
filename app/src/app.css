@@ -10,6 +10,11 @@ main {
   margin: 20px auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #footer,
 #highlighted-footer {
   padding: 20px;
@@ -61,6 +66,49 @@ img {
 #orfelia-page {
   background-color: black;
   color: rgba(100, 200, 100);
+}
+
+#orfelia-page a {
+  color: white;
+}
+
+#orfelia-page .orfelia-logo {
+  max-width: 200px;
+}
+
+#orfelia-page .messsy-logo {
+  max-width: 150px;
+}
+
+#orfelia-page .page-header,
+#orfelia-page .page-header .events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-aside {
+  max-width: 30vw;
+}
+.image-aside.left {
+  float: left;
+}
+.image-aside.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  #orfelia-page .page-header {
+    flex-direction: column;
+  }
+
+  .image-aside.left,
+  .image-aside.right {
+    float: none;
+    max-width: none;
+  }
 }
 
 #orfelia-page .container {

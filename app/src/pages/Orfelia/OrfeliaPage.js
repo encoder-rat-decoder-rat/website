@@ -1,16 +1,28 @@
 import React from "react";
-import OrfeliaContent from "./OrfeliaContent.mdx";
-import image from "../../images/orfelia-slide-1.jpeg";
+import { Outlet, Link } from "react-router-dom";
+import orfeliaLogo from "../../images/orfelia-logo.png";
+import messsyLogo from "../../images/messsy-logo.svg";
 
 const OrfeliaPage = () => {
   return (
     <div id="orfelia-page">
+      <header className="container page-header">
+        <Link to="/orfelia">
+          <img src={orfeliaLogo} className="orfelia-logo" alt="Orfelia Logo" />
+        </Link>
+        <div className="events">
+          <span>Upcoming:</span>
+          <Link to="/orfelia/messsy">
+            <img
+              src={messsyLogo}
+              className="messsy-logo"
+              alt="Messsy at Orfelia Event Logo"
+            />
+          </Link>
+        </div>
+      </header>
       <section className="container">
-        <img
-          src={image}
-          alt="Queer Futures Presents: A Night at the Orfelia. Detroit 2023. Produced By Encoder Rat Decoder Rat. The future is not yet queer."
-        />
-        <OrfeliaContent />
+        <Outlet />
       </section>
     </div>
   );
