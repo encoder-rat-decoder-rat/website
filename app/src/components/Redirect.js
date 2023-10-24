@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default Redirect = ({url}) => {
+export default function Redirect({url}) {
     window.location = url
     return (<></>)
 }
