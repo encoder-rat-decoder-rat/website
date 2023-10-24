@@ -32,11 +32,11 @@ export default function App() {
           </Route>
           <Route
               path="messsytix"
-              element={<Redirect url="https://ra.co/events/1781520" />}
+              element={<Redirect url="https://ra.co/events/1781520?p=poster" />}
           />
           <Route
               path="messytix"
-              element={<Redirect url="https://ra.co/events/1781520" />}
+              element={<Redirect url="https://ra.co/events/1781520?p=poster" />}
           />
         </Route>
       </Routes>
