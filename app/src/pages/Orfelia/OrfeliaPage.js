@@ -11,7 +11,7 @@ const OrfeliaPage = () => {
           <img src={orfeliaLogo} className="orfelia-logo" alt="Orfelia Logo" />
         </Link>
         <div className="events">
-          <span>Upcoming:</span>
+          <span>Previous Events:</span>
           <Link to="/orfelia/messsy">
             <img
               src={messsyLogo}
@@ -21,9 +21,7 @@ const OrfeliaPage = () => {
           </Link>
         </div>
       </header>
-      <section className="container">
-        <Outlet />
-      </section>
+      <Outlet />
     </div>
   );
 };

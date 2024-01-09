@@ -89,15 +89,31 @@ img {
   gap: 10px;
 }
 
-.image-aside {
-  max-width: 30vw;
+.text-center {
+
 }
+
+.image-aside {
+  width: 100%;
+  margin: 10vh 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-aside img {
+  width: 65vw;
+  height: auto;
+  z-index: 0;
+  position: relative;
+}
+
 .image-aside.left {
-  float: left;
+  justify-content: flex-start;
 }
 .image-aside.right {
-  float: right;
+  justify-content: flex-end;
 }
+
 
 @media screen and (max-width: 600px) {
   #orfelia-page .page-header {
@@ -117,3 +133,12 @@ img {
   margin: 0 auto;
   overflow: hidden;
 }
+
+#orfelia-page .text-callout {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
