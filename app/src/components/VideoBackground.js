@@ -6,7 +6,7 @@ const VideoBackground = (props) => {
 
   return (
     <div className="video-background">
-      <video preload autoplay muted loop playsinline>
+      <video autoPlay loop muted playsinline>
         <>
         {
           src.map((src) => (
