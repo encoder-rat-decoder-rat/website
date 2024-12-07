@@ -28,6 +28,14 @@
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  #orfelia-page .video-background .section-container h1,
+  #orfelia-page .video-background .section-container h1::before,
+  #orfelia-page .video-background .section-container::before {
+    font-size: 2em;
+  }
+}
+
 #orfelia-page .video-background .section-container::before {
   text-shadow: 4px 9px 0px mediumblue;
 }
