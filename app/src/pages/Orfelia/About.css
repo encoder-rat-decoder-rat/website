@@ -1,0 +1,34 @@
+#our-principles {
+  text-align: center;
+}
+
+#our-principles-container {
+  margin: 1em auto;
+  max-width: 400px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gutter: 1em;
+}
+
+#our-principles-container .principle.connector {
+  font-size: 3em;
+  color: white;
+}
+
+.artists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  gutter: 1em;
+}
+
+.artists {
+  max-width: 400px;
+}

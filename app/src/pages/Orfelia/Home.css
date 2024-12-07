@@ -1,0 +1,152 @@
+#orfelia-page .video-background .section-container h1 {
+  color: white;
+  text-shadow: -4px -9px 0px green;
+  animation: fontFamilyChange 5s infinite;
+  animation-delay: 1s;
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+#orfelia-page .video-background .section-container h1::before,
+#orfelia-page .video-background .section-container::before {
+  animation: fontFamilyChange 5s infinite;
+  color: red;
+  content: "Envisioning the future cannot be left to those in power.";
+  font-size: 5em;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-shadow: none;
+  top: 0;
+  transform: translate(-1%, 0);
+  width: 100%;
+  z-index: -1;
+}
+
+#orfelia-page .video-background .section-container::before {
+  text-shadow: 4px 9px 0px mediumblue;
+}
+#orfelia-page .video-background .section-container h1::before {
+  text-shadow: 4px 9px 0px mediumblue;
+  font-size: 1;
+}
+
+@keyframes fontFamilyChange {
+  0% {
+    font-family: "Source Code Pro", monospace;
+    transform: translateX(-1%);
+  }
+  88% {
+    font-family: "Source Code Pro", monospace;
+  }
+  90% {
+    font-family: Arial, sans-serif;
+  }
+  92% {
+    font-family: "Courier New", Courier, monospace;
+  }
+  94% {
+    font-family: Georgia, serif;
+    transform: translateX(2%);
+  }
+  96% {
+    font-family: "Times New Roman", Times, serif;
+    transform: translateX(0%);
+  }
+  100% {
+    font-family: "Source Code Pro", monospace;
+  }
+}
+
+@keyframes scanline {
+  0% {
+    top: 0;
+  }
+  5% {
+    top: 50%;
+  }
+  6% {
+    top: 0;
+  }
+  8% {
+    top: 70%;
+  }
+  10% {
+    top: -20%;
+  }
+  15% {
+    top: 80%;
+  }
+  20% {
+    top: 10%;
+  }
+  35% {
+    top: 110%;
+    height: 6px;
+  }
+  40% {
+    top: 40%;
+    height: 6px;
+  }
+  45% {
+    top: 70%;
+    height: 2px;
+  }
+  50% {
+    top: 30%;
+  }
+  55% {
+    top: 50%;
+    height: 5px;
+  }
+  60% {
+    top: 20%;
+  }
+  65% {
+    top: 80%;
+  }
+  90% {
+    top: 30%;
+    height: 12px;
+  }
+  95% {
+    top: 70%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+#orfelia-page .video-background .section-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: scanline 2s linear infinite;
+  transform: rotate(5deg);
+  mix-blend-mode: screen;
+}
+
+#orfelia-page h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#main-stage {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+#main-stage img {
+  position: relative;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 0C77.6 0 100 22.4 100 50S77.6 100 50 100 0 77.6 0 50 22.4 0 50 0z M30 30C40 40 60 40 70 30C80 20 80 80 70 70C60 60 40 60 30 70C20 80 20 20 30 30z" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 0C77.6 0 100 22.4 100 50S77.6 100 50 100 0 77.6 0 50 22.4 0 50 0z M30 30C40 40 60 40 70 30C80 20 80 80 70 70C60 60 40 60 30 70C20 80 20 20 30 30z" fill="black"/></svg>');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}

@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/encoder-rat-decoder-rat/website/issues"
   },
-  "homepage": "https://github.com/encoder-rat-decoder-rat/website#readme"
+  "homepage": "https://github.com/encoder-rat-decoder-rat/website#readme",
+  "dependencies": {
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2"
+  }
 }
