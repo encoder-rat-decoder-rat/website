@@ -20,7 +20,11 @@ const OrfeliaGallery = () => {
         >
             {
               OrfeliaGalleryPhotos.map((photo) => (
-                <img src={photo.src} alt={photo.alt} key={photo.src} />
+                <img
+                  srcset={photo.srcset}
+                  alt={photo.alt}
+                  key={photo.srcset}
+                />
               ))
             }
           </Masonry>
