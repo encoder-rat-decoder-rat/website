@@ -1,10 +1,20 @@
 import VideoBackground from "../../components/VideoBackground.js";
 import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
+import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?width=1200height=630';
 import "./Home.css"
+import TextFilters from "../../components/TextFilters.js";
+import {Helmet} from "react-helmet";
 
 export default () => (
   <>
-    <VideoBackground src={["/videos/orfelia-recap.mp4", "/videos/orfelia-recap.mov"]}>
+    <Helmet>
+      <title>A Night at The Orfelia</title>
+      <meta name="description" content="The Orfelia is an interactive art and performance event series set in 2054 at the queer nightclub of your utopian dreams. The Orfelia is our ecstatic vision of a world that lies just within our grasp." />
+      <meta name="keywords" content="queer, nightclub, utopian, dreams, art, performance, event, 2054, detroit, midwest" />
+      <meta property="og:image" content={IMG_0438_social} />
+    </Helmet>
+    <TextFilters />
+    <VideoBackground src={["https://player.vimeo.com/video/1038435582"]} aspectRatio={16/9}>
       <h1>
         Envisioning the future cannot be left to those in power.
       </h1>
