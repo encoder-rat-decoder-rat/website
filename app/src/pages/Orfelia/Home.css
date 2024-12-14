@@ -2,10 +2,12 @@
   pointer-events: none;
 }
 
-#orfelia-page .video-background .section-container h1,
 #orfelia-page .video-background .section-container h1::before,
 #orfelia-page .video-background .section-container::before {
-  filter: url(#threshold) blur(0.6px);
+  filter: url(#threshold) blur(2.6px);
+}
+#orfelia-page .video-background .section-container h1 {
+  filter: url(#threshold) blur(1.2px);
 }
 
 #orfelia-page .video-background .section-container h1 {
@@ -54,9 +56,11 @@
   0% {
     font-family: "Source Code Pro", monospace;
     transform: translateX(-1%);
+    filter: url(#threshold) blur(1.2px);
   }
   88% {
     font-family: "Source Code Pro", monospace;
+    filter: url(#threshold) blur(0px);
   }
   90% {
     font-family: Arial, sans-serif;
@@ -67,13 +71,16 @@
   94% {
     font-family: Georgia, serif;
     transform: translateX(2%);
+    filter: url(#threshold) blur(2.2px);
   }
   96% {
     font-family: "Times New Roman", Times, serif;
     transform: translateX(0%);
+    filter: url(#threshold) blur(0px);
   }
   100% {
     font-family: "Source Code Pro", monospace;
+    filter: url(#threshold) blur(1.2px);
   }
 }
 
