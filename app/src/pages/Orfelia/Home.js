@@ -2,7 +2,6 @@ import VideoBackground from "../../components/VideoBackground.js";
 import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
 import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?width=1200height=630';
 import "./Home.css"
-import TextFilters from "../../components/TextFilters.js";
 import {Helmet} from "react-helmet";
 
 export default () => (
