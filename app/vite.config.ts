@@ -5,10 +5,10 @@ import { defineConfig } from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [
-      reactRouter(),
       ViteImageOptimizer({
         /* pass your config */
       }),
+      reactRouter(),
     ],
   };
 });

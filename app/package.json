@@ -2,9 +2,10 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "react-router dev",
+    "build": "NODE_ENV=production react-router build",
     "preview": "vite preview"
   },
   "keywords": [],
