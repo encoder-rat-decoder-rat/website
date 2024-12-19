@@ -1,1 +1,0 @@
-import{n as t}from"./chunk-D52XG6IA-BMOYaOlX.js";const n=({src:e,alt:o,onClick:r})=>{const l=()=>{r&&r(e,o)};return t.jsx("li",{className:"gallery-photo",onClick:l,children:t.jsx("img",{src:e,alt:o})})};export{n as default};
