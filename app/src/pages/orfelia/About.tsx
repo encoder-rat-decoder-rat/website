@@ -1,5 +1,10 @@
 import React from "react";
-import "./About.css"; 
+import AboutStylesheet from "./About.css?url"; 
+import type { Route } from "./+types/about";
+
+export const links: Route.LinksFunction = () => [
+  { rel: "stylesheet", href: AboutStylesheet },
+];
 
 const NightAtTheOrfelia: React.FC = () => {
   return (
