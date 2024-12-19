@@ -11,8 +11,6 @@ export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: HomeStylesheet },
 ];
 
-console.log('IMG_0438', IMG_0438)
-
 export const meta: Route.MetaFunction = () => [
   { title: "A Night at The Orfelia" },
   { name: 'description', content: "The Orfelia is an interactive art and performance event series set in 2054 at the queer nightclub of your utopian dreams. The Orfelia is our ecstatic vision of a world that lies just within our grasp." },
