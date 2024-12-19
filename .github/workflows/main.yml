@@ -17,19 +17,21 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Change to App Directory 🔧 
+        run: |
+          cd app
+
       - name: Install Node.js 
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-    
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Install and Build 🔧 # This project is in the `app` sub directory and built using npm and outputs the result to the 'dist' folder.
         run: |
-          cd app
           npm ci
           npm run build
         
