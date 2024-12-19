@@ -16,7 +16,9 @@ export const meta: Route.MetaFunction = () => [
   { title: "A Night at The Orfelia" },
   { name: 'description', content: "The Orfelia is an interactive art and performance event series set in 2054 at the queer nightclub of your utopian dreams. The Orfelia is our ecstatic vision of a world that lies just within our grasp." },
   { name: "keywords", content: "queer, nightclub, utopian, dreams, art, performance, event, 2054, detroit, midwest" },
-  { property:"og:image", content: IMG_0438_social}
+  { property: "og:image", content: `https://rat.computer${IMG_0438_social}` },
+  { property:"og:title", content: "A Night at The Orfelia"},
+  { property: 'og:description ', content: "The Orfelia is an interactive art and performance event series set in 2054 at the queer nightclub of your utopian dreams. The Orfelia is our ecstatic vision of a world that lies just within our grasp." },
 ]
 
 const OrfeliaHome: React.FC = () => (
