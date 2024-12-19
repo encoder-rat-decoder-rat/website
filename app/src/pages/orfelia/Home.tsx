@@ -3,14 +3,10 @@ import VideoBackground from "../../components/VideoBackground";
 import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
 // ?width=1200height=630
 import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
-import HomeStylesheet from "./Home.css?url"
 import TextFilters from "../../components/TextFilters";
+import "./Home.css"
 
 import type { Route } from "./+types/Home";
-
-export const links: Route.LinksFunction = () => [
-  { rel: "stylesheet", href: HomeStylesheet },
-];
 
 export const meta: Route.MetaFunction = () => [
   { title: "A Night at The Orfelia" },
