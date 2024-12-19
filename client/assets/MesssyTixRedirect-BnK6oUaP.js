@@ -1,0 +1,1 @@
+import{w as e}from"./with-props-Bg27jJJ-.js";import{n as t}from"./chunk-D52XG6IA-BMOYaOlX.js";function r({url:s}){return window.location=s,t.jsx(t.Fragment,{})}const o=()=>t.jsx(r,{url:"https://ra.co/events/1781520?p=poster"}),p=e(o);export{p as default};

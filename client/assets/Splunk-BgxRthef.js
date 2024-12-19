@@ -1,0 +1,1 @@
+import{w as r}from"./with-props-Bg27jJJ-.js";import{n as o}from"./chunk-D52XG6IA-BMOYaOlX.js";import{V as t}from"./VideoBackground-BsXq3NpD.js";const n=()=>o.jsx(o.Fragment,{children:o.jsx(t,{src:["https://player.vimeo.com/video/1038435815"],aspectRatio:16/9,children:o.jsx("h1",{children:"Splunk"})})}),i=r(n);export{i as default};
