@@ -8,17 +8,17 @@ import {
 
 export default [
   layout("./MainLayout.tsx", [
-    index("./pages/Home.tsx"),
-    route("projects/gender-generator", "./pages/projects/GenderGenerator.tsx"),
+    index("./routes/Home.tsx"),
+    route("projects/gender-generator", "./routes/projects/GenderGenerator.tsx"),
   ]),
   ...prefix("orfelia", [
-    layout("./pages/orfelia/Layout.tsx", [
-      index("./pages/orfelia/Home.tsx"),
-      route("about", "./pages/orfelia/About.tsx"),
-      route("gallery", "./pages/orfelia/Gallery.tsx"),
-      route("splunk", "./pages/orfelia/Splunk.tsx"),
-      route("messsy", "./pages/orfelia/Messsy.tsx"),
+    layout("./routes/orfelia/Layout.tsx", [
+      index("./routes/orfelia/Home.tsx"),
+      route("about", "./routes/orfelia/About.tsx"),
+      route("gallery", "./routes/orfelia/Gallery.tsx"),
+      route("splunk", "./routes/orfelia/Splunk.tsx"),
+      route("messsy", "./routes/orfelia/Messsy.tsx"),
     ]),
   ]),
-  route("messsytix", "./pages/orfelia/MesssyTixRedirect.tsx"),
+  route("messsytix", "./routes/orfelia/MesssyTixRedirect.tsx"),
 ] satisfies RouteConfig;
