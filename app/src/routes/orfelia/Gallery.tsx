@@ -32,9 +32,9 @@ const OrfeliaGallery: React.FC = () => {
   const galleryPhotos = OrfeliaGalleryPhotos.map((photo) => (
     <Suspense
       fallback={<Loading />}
-      key={photo.src}
+      key={photo.srcSet}
     >
-      <GalleryPhoto src={photo.src} alt={photo.alt} onClick={handlePhotoClick}/>
+      <GalleryPhoto srcSet={photo.srcSet} alt={photo.alt} onClick={handlePhotoClick}/>
     </Suspense>
   ))
 
@@ -55,7 +55,7 @@ const OrfeliaGallery: React.FC = () => {
       {selectedPhoto && (
         <div className="overlay" onClick={closeOverlay}>
           <div className="overlay-content">
-            <img src={selectedPhoto} alt="Selected" />
+            <img srcSet={`${selectedPhoto[0]} 1000w, ${selectedPhoto[1]} 700w, ${selectedPhoto[2]} 400w`} alt="Selected" />
           </div>
         </div>
       )}

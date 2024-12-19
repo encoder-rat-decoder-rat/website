@@ -1,22 +1,23 @@
 import React from "react";
 
 interface GalleryPhotoProps {
-  src: string;
+  srcSet: string;
   alt: string;
-  onClick?: (src: string, alt: string) => void;
+  onClick?: (srcSet: string, alt: string) => void;
 }
 
-const GalleryPhoto: React.FC<GalleryPhotoProps> = ({ src, alt, onClick }) => {
+const GalleryPhoto: React.FC<GalleryPhotoProps> = ({ srcSet, alt, onClick }) => {
   const handleClick = () => {
     if (!onClick) return;
     
-    onClick(src, alt)
+    onClick(srcSet, alt)
   }
+
   
   return (
     <li className="gallery-photo" onClick={handleClick}>
       <img
-        src={src}
+        srcSet={`${srcSet[0]} 1000w, ${srcSet[1]} 700w, ${srcSet[2]} 400w`}
         alt={alt}
       />
     </li>

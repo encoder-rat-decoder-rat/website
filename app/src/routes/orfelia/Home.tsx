@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoBackground from "../../components/VideoBackground";
-import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?w=1200&h=630'
-import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
+import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?w=1000';
+import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?w=1200&h=630&format=webp'
 import HomeStylesheet from "./Home.css?url"
 import TextFilters from "../../components/TextFilters";
 
@@ -10,6 +10,8 @@ import type { Route } from "./+types/Home";
 export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: HomeStylesheet },
 ];
+
+console.log('IMG_0438', IMG_0438)
 
 export const meta: Route.MetaFunction = () => [
   { title: "A Night at The Orfelia" },
