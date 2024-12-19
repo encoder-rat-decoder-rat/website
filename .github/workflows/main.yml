@@ -32,6 +32,7 @@ jobs:
 
       - name: Install and Build 🔧 # This project is in the `app` sub directory and built using npm and outputs the result to the 'dist' folder.
         run: |
+          cd app
           npm ci
           npm run build
         
