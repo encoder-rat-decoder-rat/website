@@ -1,8 +1,9 @@
+import React from 'react';
 import './Logo.css';
 
 export default function Logo() {
   return (
-    <svg className="logo" x="0px" y="0px" viewBox="95 0 1220 428" alt="Encoder Rat Decoder Rat">
+    <svg className="logo" x="0px" y="0px" viewBox="95 0 1220 428">
       <path className="logo-green-line" d="M173.1,156.5v138.9V156.5z"/>
       <circle className="logo-dot" cx="173.1" cy="156.5" r="7"/>
       <g className="logo-rat-e">

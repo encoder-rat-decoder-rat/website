@@ -1,18 +1,26 @@
-import VideoBackground from "../../components/VideoBackground.js";
+import React from 'react';
+import VideoBackground from "../../components/VideoBackground";
 import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
-import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?width=1200height=630';
-import "./Home.css"
-import TextFilters from "../../components/TextFilters.js";
-import {Helmet} from "react-helmet";
+// ?width=1200height=630
+import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
+import HomeStylesheet from "./Home.css?url"
+import TextFilters from "../../components/TextFilters";
 
-export default () => (
-  <>
-    <Helmet>
-      <title>A Night at The Orfelia</title>
-      <meta name="description" content="The Orfelia is an interactive art and performance event series set in 2054 at the queer nightclub of your utopian dreams. The Orfelia is our ecstatic vision of a world that lies just within our grasp." />
-      <meta name="keywords" content="queer, nightclub, utopian, dreams, art, performance, event, 2054, detroit, midwest" />
-      <meta property="og:image" content={IMG_0438_social} />
-    </Helmet>
+import type { Route } from "./+types/Home";
+
+export const links: Route.LinksFunction = () => [
+  { rel: "stylesheet", href: HomeStylesheet },
+];
+
+export const meta: Route.MetaFunction = () => [
+  { title: "A Night at The Orfelia" },
+  { name: 'description', content: "The Orfelia is an interactive art and performance event series set in 2054 at the queer nightclub of your utopian dreams. The Orfelia is our ecstatic vision of a world that lies just within our grasp." },
+  { name: "keywords", content: "queer, nightclub, utopian, dreams, art, performance, event, 2054, detroit, midwest" },
+  { property:"og:image", content: IMG_0438_social}
+]
+
+const OrfeliaHome: React.FC = () => (
+  <section id="orfelia-home">
     <TextFilters />
     <VideoBackground src={["https://player.vimeo.com/video/1038435582"]} aspectRatio={16/9}>
       <h1>
@@ -32,5 +40,7 @@ export default () => (
         <figcaption>The main stage at the Orfelia</figcaption>
       </figure>
     </div>
-  </>
+  </section>
 )
+
+export default OrfeliaHome;

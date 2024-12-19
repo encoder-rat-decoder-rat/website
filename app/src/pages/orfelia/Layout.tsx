@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import messsyLogo from "../../images/messsy-logo.svg";
 import orfeliaLogo from "../../images/orfelia-logo.png";
 
-const OrfeliaLayout = () => {
+const OrfeliaLayout: React.FC = () => {
   return (
     <div id="orfelia-page">
       <header className="container page-header">

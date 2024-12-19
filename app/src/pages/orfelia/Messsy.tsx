@@ -7,7 +7,7 @@ import messsyRobotFight from "../../images/messsy-robot-fight.jpeg";
 import messsyYearning from "../../images/messsy-yearning.png";
 import orfeliaHeaderImage from "../../images/orfelia-header-image.png";
 
-const Messsy = () => (
+const Messsy: React.FC = () => (
   <>
     <div className="text-callout">
       <img

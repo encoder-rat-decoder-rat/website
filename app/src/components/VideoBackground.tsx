@@ -1,9 +1,13 @@
 import React from 'react';
 import './VideoBackground.css';
 
-const VideoBackground = (props) => {
-  const { src, children, aspectRatio=1 } = props;
+interface VideoBackgroundProps {
+  src: string[];
+  children: React.ReactNode;
+  aspectRatio: number;
+}
 
+const VideoBackground: React.FC<VideoBackgroundProps> = ({ src, children, aspectRatio }) => {
   if (src.some(url => url.includes('vimeo'))) {
     const vimeoUrlParameters = [
       'background=1',
