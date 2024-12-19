@@ -1,7 +1,6 @@
 import React from 'react';
 import VideoBackground from "../../components/VideoBackground";
-import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
-// ?width=1200height=630
+import IMG_0438 from '../../images/nightAtTheOrfelia/IMG_0438.jpeg?w=1200&h=630'
 import IMG_0438_social from '../../images/nightAtTheOrfelia/IMG_0438.jpeg';
 import HomeStylesheet from "./Home.css?url"
 import TextFilters from "../../components/TextFilters";
