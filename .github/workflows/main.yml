@@ -34,12 +34,12 @@ jobs:
         run: |
           cd app
           npm install --include=dev
-          mkdir dist
+          mkdir build
           npm run build
         
       - name: Deploy to branch
-        uses: JamesIves/github-pages-deploy-action@4.7.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: build-current # The branch the action should deploy to.
-          folder: ./app/dist # The folder the action should deploy.
+          folder: ./app/build # The folder the action should deploy.
           clean: true # Automatically remove deleted files from the deploy branch
