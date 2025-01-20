@@ -13,7 +13,7 @@ export default function Main() {
       <main id="main">
         <Outlet />
       </main>
-      <footer id="footer">ERDR © UET{Date.now()}</footer>
+      <footer id="footer">ERDR © 2025</footer>
     </div>
   )
 }
