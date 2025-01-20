@@ -9,7 +9,7 @@ import {
 export default [
   layout("./MainLayout.tsx", [
     index("./routes/Home.tsx"),
-    route("projects/gender-generator", "./routes/projects/GenderGenerator.tsx"),
+    route("/projects/gender-generator", "./routes/projects/GenderGenerator.tsx"),
   ]),
   ...prefix("orfelia", [
     layout("./routes/orfelia/Layout.tsx", [
